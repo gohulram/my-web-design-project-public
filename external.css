@@ -1,0 +1,10 @@
+/*in external css there need to be no html element only css element */
+body{
+    background-color: aqua;
+    font-size: 75%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 5px; /*provides the space between the text and the border*/
+    margin: 5px; /*provides the space outside the border or between the borders*/
+  
+} 
