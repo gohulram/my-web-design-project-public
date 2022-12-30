@@ -4,5 +4,5 @@ some description!
 
 ## subheader 
 
-watch the youtube tutorialgit status
+watch the youtube tutorial git status
 
