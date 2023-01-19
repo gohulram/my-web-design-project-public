@@ -5,11 +5,21 @@
     <style>
         p,ul,b {
             font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:large;
         }
         table, th, td {
             border:1px solid black;
             border-collapse: collapse;
 
+        }
+        table.center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table th,td{
+            padding: 50px;
+            margin: 5px;
+            font-size: large;
         }
     </style>
 </head>
@@ -65,14 +75,52 @@
         In a sense, then, there’s no comparison when it comes to Git vs.
         GitHub as far as their function. They complement rather than compete with each other in this space.
     </p>
-    <table>
+    <table class="center">
         <caption style="text-transform:capitalize">gitvsGithub</caption>
-        <tr>
-            <th colspan="3">GIT</th>
-            <td></td>
+        <tr >
+            <th>GIT</th>
+            <th>Github</th>
         </tr>
-    
-        
+        <tr>
+            <td>Git is software.</td>
+            <td>It is a service.</td>
+        </tr>
+        <tr>
+            <td>Linux maintains Git.</td>
+            <td>Microsoft maintains GitHub.</td>
+        </tr>
+        <tr>
+            <td>It is a command-line tool.</td>
+            <td>It is a graphical user interface.</td>
+        </tr>
+        <tr> 
+            <td>You can install it locally on the system. </td>
+            <td>It is hosted on the web. It is exclusively cloud-based.</td>
+        </tr>
+        <tr>
+            <td>It is a VCS to manage source code history. </td>
+            <td>It is a hosting service for Git repositories.</td>
+        </tr>
+        <tr>
+            <td>It focuses on code sharing and version control.</td>
+            <td>It focuses on centralized source code hosting.</td>
+        </tr>
+        <tr>
+            <td>It lacks a user management feature.</td>
+            <td>It has a built-in user management feature.</td>
+        </tr>
+        <tr>
+            <td>Git was launched in 2005. </td>
+            <td>GitHub was released in 2008.</td>
+        </tr>
+        <tr>
+            <td>Git has minimum external tool configuration</td>
+            <td>It has an active marketplace for tool integration.</td>
+        </tr>
+        <tr>
+            <td>Its desktop interface is named Git Gui.</td>
+            <td>Its desktop interface is named GitHub Desktop.</td>
+        </tr>
 
     </table>
 
