@@ -3,6 +3,45 @@
 <head>
     <meta charset='utf8'>
     <style>
+        ul.heading {
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+            overflow: hidden;
+            background-color: orange;
+        }
+        li.list a {
+            float: left;
+        }
+        li.list a{
+            display : block;
+            color: black;
+            text-align : center;
+            padding : 16px;
+            text-decoration : none;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:x-large;
+    
+        }
+        li.list a:hover{
+            background-color: white;
+
+        }
+        p a{
+            color: black;
+        }
+        h1 b,h2.b1{
+            color: black;
+            font-size:x-large;
+        }
+
+        h1,h2.b1{
+        color:orange;    
+        text-decoration :underline ;
+        }
+        p a :hover{
+            color:orange;
+        }
         p,ul,b {
             font-family:Georgia, 'Times New Roman', Times, serif;
             font-size:large;
@@ -23,10 +62,17 @@
         }
     </style>
 </head>
-<title></title>
+<title>Git vs Github</title>
+
 <body>
+    <ul class="heading">
+        <li class="list"><a href="#home">Home</li>
+        <li class="list"><a href="#news">News</li> 
+        <li class="list"><a href="#contact">contact</li>
+        <li class="list"><a href="#about">About</li>   
+    </ul>
     <h1 style="text-transform:capitalize"><b>git vs github: difference between git and github</b></h1>
-    <h2>table content</h2>
+    <h2 class="b1">table content</h2>
     <P style="text-transform: capitalize;"><a href="#c1"><b>what is git?</b></a></P>
     <P style="text-transform: capitalize;"><a href="#c2";><b>what is github?</b></a></P>
     <P style="text-transform: capitalize;"><a href="#c3";><b>git and github operate completely differently?</b></a></P>
@@ -36,10 +82,10 @@
         <b><u>It is a web based Git repository.</u></b> Git is a version control system used for tracking changes in computer files. 
         It is generally used for source code management in software development.
        <ul>
-         <li>Git is used to tracking changes in the source code.</li>
-         <li>The distributed version control tool is used for source code management</li>
-         <li>It allows multiple developers to work together</li>
-         <li>It supports non-linear development through its thousands of parallel branches</li>
+         <li class="a1">Git is used to tracking changes in the source code.</li>
+         <li class="a1">The distributed version control tool is used for source code management</li>
+         <li class="a1">It allows multiple developers to work together</li>
+         <li class="a1">It supports non-linear development through its thousands of parallel branches</li>
        </ul>
     </p>
     <h2 id="c2">What Is GitHub?</h2>
