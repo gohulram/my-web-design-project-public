@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset='utf8'>
+    <style>
+        ul.heading {
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+            overflow: hidden;
+            background-color: orange;
+        }
+        li.list a {
+            float: left;
+        }
+        li.list a{
+            display : block;
+            color: black;
+            text-align : center;
+            padding : 16px;
+            text-decoration : none;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:x-large;
+    
+        }
+        li.list a:hover{
+            background-color: white;
+
+        }
+        p a{
+            color: black;
+        }
+        h1 b,h2.b1{
+            color: black;
+            font-size:x-large;
+        }
+
+        h1,h2.b1{
+        color:orange;    
+        text-decoration :underline ;
+        }
+        p a :hover{
+            color:orange;
+        }
+        p,ul,b {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:large;
+        }
+        table, th, td {
+            border:1px solid black;
+            border-collapse: collapse;
+
+        }
+        table.center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table th,td{
+            padding: 50px;
+            margin: 5px;
+            font-size: large;
+        }
+    </style>
+</head>
+<title>Git vs Github</title>
+
+<body>
+    <ul class="heading">
+        <li class="list"><a href="#home">Home</li>
+        <li class="list"><a href="#news">News</li> 
+        <li class="list"><a href="#contact">contact</li>
+        <li class="list"><a href="#about">About</li>   
+    </ul>
+    <h1 style="text-transform:capitalize"><b>git vs github: difference between git and github</b></h1>
+    <h2 class="b1">table content</h2>
+    <P style="text-transform: capitalize;"><a href="#c1"><b>what is git?</b></a></P>
+    <P style="text-transform: capitalize;"><a href="#c2";><b>what is github?</b></a></P>
+    <P style="text-transform: capitalize;"><a href="#c3";><b>git and github operate completely differently?</b></a></P>
+    <P style="text-transform: capitalize;"><a href="#c2";><b>both git and github handle commands differently?</b></a></P>
+    <h2 id="c1"; style="text-transform: capitalize;">what is git?</h2>
+    <p> 
+        <b><u>It is a web based Git repository.</u></b> Git is a version control system used for tracking changes in computer files. 
+        It is generally used for source code management in software development.
+       <ul>
+         <li class="a1">Git is used to tracking changes in the source code.</li>
+         <li class="a1">The distributed version control tool is used for source code management</li>
+         <li class="a1">It allows multiple developers to work together</li>
+         <li class="a1">It supports non-linear development through its thousands of parallel branches</li>
+       </ul>
+    </p>
+    <h2 id="c2">What Is GitHub?</h2>
+    <p>
+      It is a web-based Git repository. This hosting service has cloud-based storage. GitHub offers all distributed version control and source code management functionality of Git while adding its own features. 
+      It makes it easier to collaborate using Git.</p>
+    <p>
+    Additionally, GitHub repositories are open to the public. Developers worldwide can interact and contribute to one another’s  
+    code, modify or improve it, making GitHub a networking site for web professionals. 
+    The process of interaction and contribution is also called social coding.
+    </p>
+    <h2 id="c3">Git and GitHub Operate Completely Differently</h2>
+    <p>
+        The main Git vs GitHub difference is in their functionality. While they both provide source code management (SCM) and make merging and sharing code easier, this is pretty much where their similarities end. Think of Git as a single computer and GitHub as a network of multiple interconnected computers, all with the same end goal but a wildly different role for how to get there.
+    </p>
+    <p>
+       At its core, Git is a free, open-source software distributed version control system (DVCS) designed to manage all source code history. It can keep a history of commits, can reverse changes, and lets developers share code. Each developer must have Git installed on his or her local device to collaborate. It is commonly referred to as one of the best DevOps tools to understand and use in the developer space, and it’s among the most widely used tools today.
+        Companies like Amazon, Facebook, and Microsoft use it, to name a few.
+    </p>
+    <p>  
+      GitHub, on the other hand, is a web-based hosting service for Git repositories. It offers all of Git’s DVCS SCM and has some additional features. This includes collaboration functionality like project management, support ticket management, and bug tracking. With GitHub, developers can share their repositories, access other developers’ repositories, and store remote copies of repositories to serve as backups.
+    </p>
+    <h2 id="c4">Both Git and GitHub Handle Commands Differently</h2>
+    <p><!-- the tag <pre> which execute the elememnt inside it obsolutely without no changes. -->
+        Git developers themselves perform a command-line tool where code changes like commit and merge within the Git tool on their own local devices. 
+        By contrast, GitHub provides its cloud-based graphical interface where these tasks are performed. The interface also offers developers access control, collaboration features, and various task-management tools.
+     </p> 
+    <p>
+        When it comes to commands, Git focuses exclusively on SCM tasks like push and pull, commit, reset, fetch, and merge.
+        GitHub, meanwhile, serves as a host for Git repository teams to store their code in a centralized location. While Git is a tool that’s used to manage multiple versions of source code edits that are then transferred to files in a Git repository, GitHub serves as a location for uploading copies of a Git repository.
+    </p>
+    <p>    
+        In a sense, then, there’s no comparison when it comes to Git vs.
+        GitHub as far as their function. They complement rather than compete with each other in this space.
+    </p>
+    <table class="center">
+        <caption style="text-transform:capitalize">gitvsGithub</caption>
+        <tr >
+            <th>GIT</th>
+            <th>Github</th>
+        </tr>
+        <tr>
+            <td>Git is software.</td>
+            <td>It is a service.</td>
+        </tr>
+        <tr>
+            <td>Linux maintains Git.</td>
+            <td>Microsoft maintains GitHub.</td>
+        </tr>
+        <tr>
+            <td>It is a command-line tool.</td>
+            <td>It is a graphical user interface.</td>
+        </tr>
+        <tr> 
+            <td>You can install it locally on the system. </td>
+            <td>It is hosted on the web. It is exclusively cloud-based.</td>
+        </tr>
+        <tr>
+            <td>It is a VCS to manage source code history. </td>
+            <td>It is a hosting service for Git repositories.</td>
+        </tr>
+        <tr>
+            <td>It focuses on code sharing and version control.</td>
+            <td>It focuses on centralized source code hosting.</td>
+        </tr>
+        <tr>
+            <td>It lacks a user management feature.</td>
+            <td>It has a built-in user management feature.</td>
+        </tr>
+        <tr>
+            <td>Git was launched in 2005. </td>
+            <td>GitHub was released in 2008.</td>
+        </tr>
+        <tr>
+            <td>Git has minimum external tool configuration</td>
+            <td>It has an active marketplace for tool integration.</td>
+        </tr>
+        <tr>
+            <td>Its desktop interface is named Git Gui.</td>
+            <td>Its desktop interface is named GitHub Desktop.</td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>
