@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>cd l
+<head>
 <meta charset='utf8'>
 <meta name='viewport' content='width=device-width, initial-scale= 1.0'>
 <style>
+aside ul aside1:hover{
+    list-style-type: none;
+    color:orange;
+}
 ul.heading {
     list-style-type: none;
     margin: 0;
@@ -72,6 +76,21 @@ table th,td{
 <title>Git vs Github</title>
 
 <body>
+
+<aside>
+    <h1><b>Git tutorial</b></h1>
+    <ul class="aside1">
+        <li>git home</li>
+        <li>git intro</li>
+        <li>git get started</li>
+        <li>git new files</li>
+        <li>git staging environment</li>
+        <li>git commit</li>
+        <li>git help</li>
+        <li>git branch</li>
+        <li>git branch merge</li>
+    </ul>
+</aside>
 <div><ul class="heading">
         <li class="list"><a href="#home">Home</li>
         <li class="list"><a href="#news">News</li> 

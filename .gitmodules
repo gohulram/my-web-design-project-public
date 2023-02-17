@@ -1,0 +1,9 @@
+
+   
+   [submodule "dist"]
+       path =  path_to_submodule
+
+       url  = https://github.com/gohulram/my-web-design-project-public
+
+
+
