@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="eng">
 <head>
+<!--load an icon library to sjow a hamburger menu(bars) on small screens
+to use icons, just add a link to the icon library the <head> section of your html page. No downloads or installatiobs is required
+we place font awesome icons by using the prefix fa and the icon's name    -->
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta charset='utf8'>
 <meta name='viewport' content='width=device-width, initial-scale= 1.0'>
 <style>
-aside ul aside1:hover{
-    list-style-type: none;
-    color:orange;
+/* style the navigation menu*/
+.menu1{
+    overflow: hidden;
+    background-color:rgb(167, 167, 167);
+    position: relative;
 }
+/*hide the links inside the navigation menu*/
+.menu1 #menu2 {
+    display:none;
+    color: black;
+}
+.menu1 #menu2 a {
+  color: black;
+}
+/*style navigation menu links*/
+.menu1 a{
+text-transform: capitalize;    
+text-decoration: none;
+color:white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 17px;
+display: block;
+padding: 14px 16px;
+}
+
+/*style the hamburger menu*/
+.menu1 a.icon {
+    
+    background: rgb(1, 1, 1);
+    display:block;
+    float: left;
+    position: absolute;
+    left:0%;
+    top:0%;
+}
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 10px;
+}
+
+/* add a grey background color on the mouse-over */
+.menu1 a:hover{
+    background-color: orange;
+    color: black;
+}
+
 ul.heading {
     list-style-type: none;
     margin: 0;
@@ -32,21 +81,20 @@ li.list a:hover {
     background-color: white;
 
 }
-p a {
+.topics a {
     color: black;
-}
-h1 b,h2.b1 {
-    color: black;
-    font-size:x-large;
+    text-decoration: none;
 }
 
-h1,h2.b1{
-    color:orange;    
-    text-decoration :underline ;
+.topichead h1,h2{
+text-decoration: none;
+text-transform:capitalize ;
+color:rgb(16, 16, 15);  
 }
 
-p a :hover{
+.topics a :hover{
     color:orange;
+
 }
 
 p,ul,b {
@@ -71,26 +119,45 @@ table th,td{
     font-size: large;
 }
 </style>
-
+<script>
+ /* toggle between showing and hidding the navigation menu links when the 
+user clicks on the hamburger menu / bar icon */
+function myFunction(){
+    var x = document.getElementById('menu2');
+    if (x.style.display == "block"){
+       x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    } 
+}
+   
+</script>
 </head>
 <title>Git vs Github</title>
 
 <body>
+<div class="menu1">    
+<!--in this we are gonna see about how to create the hamburger menu HTML part-->
+    <div id="menu2">
+      <a href="#">.</a>
+      <a href="#git home">git home</a>
+      <a href="#git intro">git intro</a>
+      <a href="#git get start">git get start</a>
+      <a href="#git new files">git new files</a>
+      <a href="#git staging environment">git stagging environment </a>
+      <a href="#git branch">git branch</a>
+      <a href="#git help">git help</a>
+      <a href="#git branch merge">git branch merge</a>
+    </div> 
 
-<aside>
-    <h1><b>Git tutorial</b></h1>
-    <ul class="aside1">
-        <li>git home</li>
-        <li>git intro</li>
-        <li>git get started</li>
-        <li>git new files</li>
-        <li>git staging environment</li>
-        <li>git commit</li>
-        <li>git help</li>
-        <li>git branch</li>
-        <li>git branch merge</li>
-    </ul>
-</aside>
+    <div class="hamburger"> 
+    <!--"Hamburger menu" / "bar icon" to toggle the navigation links-->
+    <a href="javascript:void(0)" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+    </a>
+    </div>
+</div>
+
 <div><ul class="heading">
         <li class="list"><a href="#home">Home</li>
         <li class="list"><a href="#news">News</li> 
@@ -99,13 +166,17 @@ table th,td{
     </ul>
 </div>
 
-    <h1 style="text-transform:capitalize"><b>git vs github: difference between git and github</b></h1>
-    <h2 class="b1">table content</h2>
-<div>    
-    <P style="text-transform: capitalize;"><a href="#c1"><b>what is git?</b></a></P>
-    <P style="text-transform: capitalize;"><a href="#c2";><b>what is github?</b></a></P>
-    <P style="text-transform: capitalize;"><a href="#c3";><b>git and github operate completely differently?</b></a></P>
-    <P style="text-transform: capitalize;"><a href="#c2";><b>both git and github handle commands differently?</b></a></P>
+<div class="topichead">
+   <h1><b>git vs github: difference between git and github</b></h1>
+   <h2>table content</h2>
+
+   <div class="topics">    
+     <P style="text-transform: capitalize;"><a href="#c1"><b>what is git?</b></a></P>
+     <P style="text-transform: capitalize;"><a href="#c2";><b>what is github?</b></a></P>
+     <P style="text-transform: capitalize;"><a href="#c3";><b>git and github operate completely differently?</b></a></P>
+     <P style="text-transform: capitalize;"><a href="#c2";><b>both git and github handle commands differently?</b></a></P>
+   </div>
+
 </div>
 
 <div>
@@ -122,7 +193,7 @@ table th,td{
     </p>
 </div>   
     
-<div>
+<section>
     <h2 id="c2">What Is GitHub?</h2>
     <p>
       It is a web-based Git repository. This hosting service has cloud-based storage. GitHub offers all distributed version control and source code management functionality of Git while adding its own features. 
@@ -132,9 +203,9 @@ table th,td{
     code, modify or improve it, making GitHub a networking site for web professionals. 
     The process of interaction and contribution is also called social coding.
     </p>
-</div>
+</section>
 
-<div>
+<section>
     <h2 id="c3">Git and GitHub Operate Completely Differently</h2>
     <p>
         The main Git vs GitHub difference is in their functionality. While they both provide source code management (SCM) and make merging and sharing code easier, this is pretty much where their similarities end. Think of Git as a single computer and GitHub as a network of multiple interconnected computers, all with the same end goal but a wildly different role for how to get there.
@@ -146,9 +217,10 @@ table th,td{
     <p>  
       GitHub, on the other hand, is a web-based hosting service for Git repositories. It offers all of Git’s DVCS SCM and has some additional features. This includes collaboration functionality like project management, support ticket management, and bug tracking. With GitHub, developers can share their repositories, access other developers’ repositories, and store remote copies of repositories to serve as backups.
     </p>
-</div>
+</section>
+
 <section>
-    
+
     <h2 id="c4">Both Git and GitHub Handle Commands Differently</h2>
     <p><!-- the tag <pre> which execute the elememnt inside it obsolutely without no changes. -->
         Git developers themselves perform a command-line tool where code changes like commit and merge within the Git tool on their own local devices. 
@@ -163,6 +235,7 @@ table th,td{
         GitHub as far as their function. They complement rather than compete with each other in this space.
     </p> 
 </section>
+
 <table class="center">
     <caption style="text-transform:capitalize">gitvsGithub</caption>
     <tr >
